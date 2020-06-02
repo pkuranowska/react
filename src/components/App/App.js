@@ -12,7 +12,7 @@ class App extends React.Component {
         {/*<List title={['Things to do', <sup key='1'>soon!</sup>]} image={'https://i.postimg.cc/QxYj0QpB/space.png'}></List>*/}
         <List {...listData} />
       </main>
-    )
+    );
   }
 }
 
