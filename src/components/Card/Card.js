@@ -5,13 +5,15 @@ import PropTypes from 'prop-types';
 
 class Card extends React.Component {
   static propTypes = {
-    title: PropTypes.string,
+    title: PropTypes.node.isRequired,
   }
 
   render() {
     const {title} = this.props;
     return (
-      <h3 className={styles.component}>{title}</h3>
+      <section className={styles.component}>
+        <h3>{title}</h3>
+      </section>
     );
   }
 }
